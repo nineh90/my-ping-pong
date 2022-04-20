@@ -1,0 +1,95 @@
+.gamecontainer{
+    width: 720px;
+    height: 480px;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: white ;
+    border-width: 5px; 
+}
+
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#p1_points_container{
+    color: hotpink;
+}
+
+#p2_points_container{
+    color: green;
+}
+
+.points_container{
+    font-size: 25px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordergame {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    position: relative;
+}
+
+#start-screen  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#name-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#player-one-name {
+    margin-bottom: 1rem;
+}
+
+#set-name-btn {
+    margin-top: 1rem;
+}
+.name-input, #set-name-btn {
+    padding: 0.5rem 1rem;
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    
+}
+
+h2, p {
+    color: yellow;
+}
+
+#backToStart {
+    margin-top: 1rem;
+    width: 250px;
+    height: 25px;
+}
+
+#end-screen {
+    display: none;
+    width: 720px;
+    height: 480px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

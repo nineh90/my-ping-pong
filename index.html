@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de-de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+<title>PornoPingPong</title>
+</head>
+<body>
+
+    
+
+
+        <div class="bordergame">
+            <div id="start-screen">
+                <div id="name-input-container">
+                    <h1>Willkommen bei Pornopong</h1>
+                    <p>
+                        Gebt eure Namen ein und das Spiel beginnt.<br>
+                        Tasten für:<br>
+                        Spieler 1: W & S<br>
+                        Spieler 2: UP & DOWN<br>
+                    </p>
+                    <h2>Viel Spaß beim Spiel</h2>
+                    
+                    <input type="text" placeholder="Spieler 1" class="name-input" id="player-one-name"/>
+                    <input type="text" placeholder="Spieler 2" class="name-input" id="player-two-name"/>
+                    <button id="set-name-btn" onclick="setNames()">Los Gehts</button>
+                </div>
+            </div>
+            <div class="points_container"> <p id="p1_points_container"></p>
+            </div>
+            <div id="game-container" class="gamecontainer">
+                <canvas id="canvas" width="720" height="480"></canvas>
+            </div>
+            <div class="points_container" id="p2_points_container"></div>
+            <!--HIER DEN ENDSCREEN HIN-->
+            <div id="end-screen">
+                    <h1>Game Over</h1>
+                    <p id="player-name-text"></p>
+                    <button id="backToStart" onclick="location.reload()">Zurück zum Start </button>
+                    </div>
+            </div>
+        </div>
+
+   
+ <script src="pornopong.js"></script>
+
+</body>
+</html>
